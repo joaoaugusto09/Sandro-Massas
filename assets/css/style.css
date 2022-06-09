@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* AJUSTE CARD PRODUTOS */
+#produtos .row .card{
+    width: 200px;
+    float: left;
+}
+#produtos .row .card img{
+    width: 200px;
+}
+#receitas .row .card{
+    width: 200px;
+    float: left;
+}
+#receitas .row .card img{
+    width: 200px;
+}
+#ibagem {
+    width: 300px;
+}
+
