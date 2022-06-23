@@ -164,7 +164,7 @@ $dadosReceitas = array(
         raspas da casca de uma laranja 
         1 ovo 
         ','video'=>'<iframe width="560" height="315" src="https://www.youtube.com/embed/R3jmHjdtmQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'),
-    8=> array('titulo'=>'Lua de Mel','imagem'=>'luademelreceita.jfif','descrição'=>'ngredientes:
+    8=> array('titulo'=>'Lua de Mel','imagem'=>'luademelreceita.jfif','descrição'=>'Ingredientes:
         600g de farinha de trigo
         250ml de leite morno
         2 colheres de sopa de margarina
