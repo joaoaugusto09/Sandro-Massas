@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 23-Jun-2022 às 20:27
+-- Tempo de geração: 14-Jul-2022 às 21:54
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 7.3.27
 
@@ -37,12 +37,7 @@ CREATE TABLE `categorias` (
 --
 
 INSERT INTO `categorias` (`CategoriaID`, `Nome`) VALUES
-(1, 'Pães'),
-(2, 'Bolo'),
-(3, 'Salgado'),
-(4, 'Doces'),
-(5, 'Bebidas'),
-(6, 'Sorvetes');
+(9, 'Rock');
 
 -- --------------------------------------------------------
 
@@ -95,7 +90,9 @@ INSERT INTO `produtos` (`ProdutoID`, `Nome`, `Imagem`, `Preco`, `Descricao`, `Ca
 (7, 'Branquinho de Paçoquinha', 'branquinho-pacoquinha.png', 2.7, 'Descrição do Paçoquinha', 4),
 (8, 'Brownies', 'brownies.jpg', 7.5, 'Descrição do Brownies', 4),
 (9, 'Churros', 'churros.jpg', 5, 'Descrição do churros', 4),
-(10, 'Lua de Mel', 'lua-de-mel.jpg', 6, 'Descrição do Lua de Mel', 4);
+(10, 'Lua de Mel', 'lua-de-mel.jpg', 6, 'Descrição do Lua de Mel', 4),
+(12, 'aha', 'aha.pmg', 1000, 'preco', 32),
+(15, 'Pedra de sal', 'produto-202207142136288896758.png', 10, 'Pedra de açucar', 0);
 
 -- --------------------------------------------------------
 
@@ -125,7 +122,9 @@ INSERT INTO `receitas` (`ReceitaID`, `Titulo`, `Imagem`, `Descricao`, `Video`, `
 (6, 'Stick de queijo com salsicha', 'stick.png', 'INGREDIENTES PARA A MASSA\r\n\r\n    300 ml(s) leite\r\n    1 colher(es) de sopa açúcar\r\n    1/2 colher(es) de sopa sal\r\n    1 colher(es) de sopa margarina\r\n    1 colher(es) de sopa fermento biológico seco\r\n    1/2 kg(s) farinha de trigo\r\n    óleo para fritura\r\n    \r\n    INGREDIENTES PARA O RECHEIO\r\n    \r\n    9 fatia(s) muçarela\r\n    9 unidade(s) salsicha\r\n    molho de tomate a gosto\r\n    \r\n    INGREDIENTES PARA EMPANAR\r\n    \r\n    1 ovo\r\n    1 copo(s) água\r\n    farinha panko\r\n    \r\n    MODO DE PREPARO\r\n    \r\n    Em uma tigela ponha todos os ingredientes, menos a farinha, e misture bem. Em seguida vá acrescentando a farinha aos poucos, sove bem até obter uma massa lisinha, agora e só abrir com a ajuda de um rolo até ficar bem fina e cortar pedaços do tamanho de um palmo da mão por 3 três dedos. Coloque um pouco do molho em cima da salsicha, enrole com o queijo e coloque na ponta da massa aberta, enrole e feche as laterais. Agora, é só empanar passando no ovo e na farinha panko, leve ao oléo quente para fritar até dourar. Retire do óleo e sirva.', '<iframe width=\"956\" height=\"538\" src=\"https://www.youtube.com/embed/10b7k0OOBX8\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', 2),
 (7, 'Churros', 'churo.jpg', 'INGREDIENTES:\r\n        300 gramas de farinha de trigo comum \r\n        440 gramas de água \r\n        1 col de chá de sal fino \r\n        1 pitada de açúcar \r\n        1 colher de esc de baunilha \r\n        raspas da casca de uma laranja \r\n        1 ovo ', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/R3jmHjdtmQo\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', 3),
 (8, 'Lua de Mel', 'luademelreceita.jfif', 'Ingredientes:\r\n        600g de farinha de trigo\r\n        250ml de leite morno\r\n        2 colheres de sopa de margarina\r\n        2 colheres de sopa de açúcar\r\n        2 ovos\r\n        1 pacote de fermento seco para pães\r\n        1 colher de café rasa de sal', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/hdVjNycrR9U\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', 3),
-(9, 'Bomba', 'bombareceita.jpg', 'Ingredientes da massa Pâte a Choux\r\n\r\n    1 xícara (chá) de água ( 240 ml)\r\n    6 colheres (sopa) de manteiga ( 120 g)\r\n    1 colher (sopa) de açúcar ( 12 g)\r\n    1 colher ( café ) de sal \r\n    1 xícara (chá) de farinha de trigo ( 140 g)\r\n    3 ovos\r\n    \r\n    \r\n    Ingredientes do recheio  Creme Patissier ou Creme de Confeiteiro\r\n    \r\n    2 copos (tipo requeijão) de leite ( 500 g)\r\n    2 colheres (chá) de essência de baunilha ( 10 ml)\r\n    3 gemas \r\n    1 xícara (chá) de açúcar ( 180 g)\r\n    ¼ xícara (chá) de amido de milho ( 38 g)\r\n    2 colheres (sopa) de manteiga ( 40 g)\r\n    \r\n    Ingrediente para  pincelar\r\n    \r\n    1 ovo \r\n    \r\n    Ingredientes da cobertura \r\n    \r\n    150 g de chocolate ao leite ou cobertura fracionada sabor chocolate ao leite \r\n    chocolate branco a gosto ( para decorar)\r\n    granulado de chocolate a gosto ( para decorar)', '<iframe width=\"956\" height=\"538\" src=\"https://www.youtube.com/embed/ohd_1zoa_wk\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', 3);
+(9, 'Bomba', 'bombareceita.jpg', 'Ingredientes da massa Pâte a Choux\r\n\r\n    1 xícara (chá) de água ( 240 ml)\r\n    6 colheres (sopa) de manteiga ( 120 g)\r\n    1 colher (sopa) de açúcar ( 12 g)\r\n    1 colher ( café ) de sal \r\n    1 xícara (chá) de farinha de trigo ( 140 g)\r\n    3 ovos\r\n    \r\n    \r\n    Ingredientes do recheio  Creme Patissier ou Creme de Confeiteiro\r\n    \r\n    2 copos (tipo requeijão) de leite ( 500 g)\r\n    2 colheres (chá) de essência de baunilha ( 10 ml)\r\n    3 gemas \r\n    1 xícara (chá) de açúcar ( 180 g)\r\n    ¼ xícara (chá) de amido de milho ( 38 g)\r\n    2 colheres (sopa) de manteiga ( 40 g)\r\n    \r\n    Ingrediente para  pincelar\r\n    \r\n    1 ovo \r\n    \r\n    Ingredientes da cobertura \r\n    \r\n    150 g de chocolate ao leite ou cobertura fracionada sabor chocolate ao leite \r\n    chocolate branco a gosto ( para decorar)\r\n    granulado de chocolate a gosto ( para decorar)', '<iframe width=\"956\" height=\"538\" src=\"https://www.youtube.com/embed/ohd_1zoa_wk\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', 3),
+(10, 'Celular', 'celular.png', 'celularrrr', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/xSeXZRJOX54\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', 6),
+(12, 'Saboneteira da Nike', 'receita--1076187639.png', 'Saboneteira da Adidas', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/rsxx4RJtu0A\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', 0);
 
 --
 -- Índices para tabelas despejadas
@@ -163,7 +162,7 @@ ALTER TABLE `receitas`
 -- AUTO_INCREMENT de tabela `categorias`
 --
 ALTER TABLE `categorias`
-  MODIFY `CategoriaID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `CategoriaID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de tabela `categoriasdereceitas`
@@ -175,13 +174,13 @@ ALTER TABLE `categoriasdereceitas`
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `ProdutoID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `ProdutoID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de tabela `receitas`
 --
 ALTER TABLE `receitas`
-  MODIFY `ReceitaID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `ReceitaID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
