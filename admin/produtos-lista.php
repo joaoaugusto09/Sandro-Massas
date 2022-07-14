@@ -2,7 +2,7 @@
 include_once '../includes/_banco.php';
 include_once '_head.php';
 
-$sql = "SELECT * FROM categorias";
+$sql = "SELECT * FROM produtos";
 
 $resultado = mysqli_query($conn, $sql);
 $total = mysqli_num_rows($resultado);
@@ -10,9 +10,9 @@ $total = mysqli_num_rows($resultado);
 include_once '_menu.php';
 ?>
     <main>
-        <h2>Adminiministração das Categorias</h2>
+        <h2>Adminiministração dos Produtos</h2>
         
-        <a href="categoria-salvar.php">Inserir</a>
+        <a href="produtos-salvar.php">Inserir</a>
         <hr>
         <table border="1">
             <tr>
@@ -27,9 +27,9 @@ if ( $total > 0 ) {
                 while ($dado = mysqli_fetch_array($resultado)) {
             ?>
                 <tr>
-                    <td><?php echo $dado['CategoriaID'];?></td>
-                    <td><a href="categoria-salvar.php?acao=salvar&id=<?php echo $dado['CategoriaID'];?>"><?php echo $dado['Nome'];?></a></td>
-                    <td><a href="categoria-processa.php?acao=excluir&id=<?php echo $dado['CategoriaID']?>">Excluir</a></td>
+                    <td><?php echo $dado['ProdutoID'];?></td>
+                    <td><a href="produtos-salvar.php?acao=salvar&id=<?php echo $dado['ProdutoID'];?>"><?php echo $dado['Nome'];?></a></td>
+                    <td><a href="produtos-processa.php?acao=excluir&id=<?php echo $dado['ProdutoID']?>">Excluir</a></td>
                 </tr>
             <?php 
                 }
