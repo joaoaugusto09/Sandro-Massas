@@ -1,4 +1,5 @@
 <?php
+include_once '_valida.php';
 include_once '../includes/_banco.php';
 include_once '_head.php';
 

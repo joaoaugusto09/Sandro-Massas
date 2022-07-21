@@ -17,6 +17,7 @@ if (isset($_GET['id']) || !empty($_GET['id'])) {
 
 }
 include_once '_menu.php';
+
 ?>
     <main>
         <h2>Adminiministração dos Produtos</h2>
@@ -31,6 +32,20 @@ include_once '_menu.php';
             <input type="number" id="preco" name="preco" value="<?php echo $dados['Preco']?>"><br>
             <label for="descricao">Descrição:</label><br>
             <textarea name="descricao" id="descricao"><?php echo $dados['Descricao']?></textarea><br>
+            <label for="">Categoria</label>
+            <select name="" id="">
+            <?php
+            // consulta as categorias do site
+            $sqlCategorias = "SELECT * FROM categorais";
+            $resultadoCategorias = mysqli_query($conn, $sqlCategorias);
+            // lista dados
+            while( $dadoCategoria = mysqli_fetch_array($resultadoCategorias, MYSQLI_ASSOC)) {
+            ?>
+                <option value="<?php echo $dadoCategoria['CategoriaID'];?>"><?php echo $dadoCategoria['Nome'];?></option>
+            <?php
+            }
+            ?>
+            </select>
             <label for="imagem">Imagem:</label><br>
             <?php 
             if (!empty($dados['Imagem'])    ){    

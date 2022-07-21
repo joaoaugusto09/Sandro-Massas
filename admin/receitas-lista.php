@@ -1,4 +1,5 @@
 <?php
+include_once '_valida.php';
 include_once '../includes/_banco.php';
 include_once '_head.php';
 
@@ -24,7 +25,7 @@ include_once '_menu.php';
             <?php 
     
 if ( $total > 0 ) {
-                while ($dado = mysqli_fetch_array($resultado)) {
+                while ($dado = mysqli_fetch_assoc($resultado)) {
             ?>
                 <tr>
                     <td><?php echo $dado['ReceitaID'];?></td>
